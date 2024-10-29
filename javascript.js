@@ -6,12 +6,12 @@ const playBtn = document.getElementById("playBtn");
 const backgroundMusic = document.getElementById("backgroundMusic");
 
 stopBtn.addEventListener("click", () => {
-    backgroundMusic.pause(); // Pause the audio
-    backgroundMusic.currentTime = 0; // Reset the audio to the beginning
+    backgroundMusic.pause(); // Pausar musica
+    backgroundMusic.currentTime = 0; // Replay musica
 });
 
 playBtn.addEventListener("click", () => {
-    backgroundMusic.play(); // Play the audio
+    backgroundMusic.play(); // Play musica
 });
 boton.addEventListener("click", () => {
     fetch("https://ghibli-api-v1.azurewebsites.net/api/v1/movies")
@@ -53,7 +53,7 @@ function renderProducts(productsToRender) {
                         <h5 class="card-title" id="card-title">${product.title.es}</h5>
                         <p class="card-text"><small class="text-body-secondary" id="original-title">${product.original_title}</small></p>
                         <p class="card-text"><small class="text-body-secondary" id="original-title-r">${product.original_title_romanised}</small></p>
-                        <p class="card-text" id="description">${product.description.en}</p>
+                        <p class="card-text" id="description">${product.description.es}</p>
                         <p class="card-text"><small class="text-body-secondary" id="time">Duración: ${product.running_time} minutos</small></p>
                     </div>
                 </div>

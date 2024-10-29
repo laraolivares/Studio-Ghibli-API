@@ -1,0 +1,64 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.content {
+    position: fixed;
+    color: #f1f1f1;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    top: 20px; /* Adjust this to push content down */
+}
+
+#musicControls {
+    position: fixed;
+    bottom: 20px; /* Place the music controls at the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#card {
+    width: 800px;
+    margin-top: 2%;
+    margin-left: 20%;
+}
+
+#card-title {
+    margin-top: 30px;
+}
+
+#titleS {
+    margin: auto auto 2rem auto;
+    font-size: 2rem;
+    background: radial-gradient(
+        circle at 100%,
+        #f6bd60,
+        #f28482 50%,
+        #f7ede2 75%,
+        #f28482 75%
+    );
+    font-weight: 600;
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animatedTextGradient 2s linear infinite;
+}
+
+@keyframes animatedTextGradient {
+    to {
+        background-position: 200% center;
+    }
+}
+
+#titulo {
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    padding: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
